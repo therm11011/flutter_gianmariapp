@@ -35,17 +35,60 @@ class _HomeScreenState extends State<HomeScreen> {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Center(
-            child: Text(
-              'Welcome to the Home Screen!',
-              style: TextStyle(
-                color: AppColors.textColor,
-                fontSize: 24,
-                fontWeight: FontWeight.bold,
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Card(
+              child: Container(
+                width: 100,
+                height: 100,
+                color: Colors.white,
               ),
             ),
+             Card(
+              child: Container(
+                width: 100,
+                height: 100,
+                color: Colors.white,
+              ),
+            ),
+             Card(
+              child: Container(
+                width: 100,
+                height: 100,
+                color: Colors.white,
+              ),
+            ),
+            ],
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Card(
+              child: Container(
+                width: 100,
+                height: 100,
+                color: Colors.white,
+              ),
+            ),
+             Card(
+              child: Container(
+                width: 100,
+                height: 100,
+                color: Colors.white,
+              ),
+            ),
+             Card(
+              child: Container(
+                width: 100,
+                height: 100,
+                color: Colors.white,
+              ),
+            ),
+            ],
           ),
         ],
+        
       ),
 
     );
