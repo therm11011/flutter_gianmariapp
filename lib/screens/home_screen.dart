@@ -14,79 +14,27 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       backgroundColor: AppColors.primaryColor,
       appBar: AppBar(
+        automaticallyImplyLeading: false,
         elevation: 0.0,
         title: Text('Home',
          style: TextStyle(color: Color.fromRGBO(255, 255, 255, 1) ),
         ),
         centerTitle: true,
         backgroundColor: AppColors.secondaryColor,
-        actions: [
-          IconButton(
+        leading: 
+          BackButton(
+            color: Colors.white,
             onPressed: () {
-              // Handle search action
+              Navigator.pop(context);
             },
-            icon: Icon(Icons.settings, color: Color.fromRGBO(255, 255, 255, 1)),
           ),
-          ],
       ),
-
-
+    
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Card(
-              child: Container(
-                width: 100,
-                height: 100,
-                color: Colors.white,
-              ),
-            ),
-             Card(
-              child: Container(
-                width: 100,
-                height: 100,
-                color: Colors.white,
-              ),
-            ),
-             Card(
-              child: Container(
-                width: 100,
-                height: 100,
-                color: Colors.white,
-              ),
-            ),
-            ],
-          ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Card(
-              child: Container(
-                width: 100,
-                height: 100,
-                color: Colors.white,
-              ),
-            ),
-             Card(
-              child: Container(
-                width: 100,
-                height: 100,
-                color: Colors.white,
-              ),
-            ),
-             Card(
-              child: Container(
-                width: 100,
-                height: 100,
-                color: Colors.white,
-              ),
-            ),
-            ],
-          ),
+          
         ],
         
       ),

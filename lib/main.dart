@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gianmari_flutterapp/screens/home_screen.dart';
+import 'package:gianmari_flutterapp/screens/landing_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
-      home: HomeScreen(),
+      home: LandingScreen(),
     );
   }
 }
