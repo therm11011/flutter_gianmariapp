@@ -23,17 +23,20 @@ class _LandingScreenState extends State<LandingScreen> {
             child: CircleAvatar(
               radius: 100, // Controls the size of the circle
               backgroundColor: Colors.blue,
-              child: Text("A"),
+              child: Text("G"),
             ),
           ),
-          ElevatedButton(
-            child: Text("Get Started"),
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => HomeScreen()),
-              );
-            },
+          Padding(
+            padding: EdgeInsets.only(top: 20.0),
+            child: ElevatedButton(
+                  child: Text("Get Started"),
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => HomeScreen()),
+                    );
+                  },
+                ),
           ),
         ],
       ),
