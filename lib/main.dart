@@ -1,8 +1,18 @@
+import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
 import 'package:gianmari_flutterapp/screens/home_screen.dart';
 import 'package:gianmari_flutterapp/screens/landing_screen.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  
+  // Try to fetch cameras here to see if the system even sees them
+  try {
+    await availableCameras();
+  } catch (e) {
+    print("Camera check failed: $e");
+  }
+
   runApp(const MyApp());
 }
 
