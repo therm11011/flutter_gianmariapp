@@ -1,6 +1,5 @@
 import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
-import 'package:gianmari_flutterapp/screens/home_screen.dart';
 import 'package:gianmari_flutterapp/screens/landing_screen.dart';
 
 void main() async {
